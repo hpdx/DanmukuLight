@@ -1,6 +1,12 @@
 # DanmukuLight
 Android上专为视屏直播打造的轻量级弹幕库（100多kb）
 
+## demo运行后的效果如下：
+<img src="https://github.com/hpdx/DanmukuLight/blob/master/result_image.jpg" width="320px" />
+
+[下载示例Apk](https://github.com/hpdx/DanmukuLight/blob/master/danmuku.apk)
+
+
 ## 目前支持以下需求
 * 继承自View实现的DanMuView（直播间的弹幕，推荐使用这种）
 * 继承自SurfaceView实现的DanMuView
@@ -24,7 +30,7 @@ Android上专为视屏直播打造的轻量级弹幕库（100多kb）
  compile 'com.anbetter:danmukulight:1.0.0'
 ```
 
-在xml不居中添加
+在xml中添加
 ```
         <com.anbetter.danmuku.DanMuView
             android:id="@+id/danmaku_container_broadcast"
@@ -77,7 +83,7 @@ OK了，就这么简单，一条弹幕就发送成功了
 
 ## 对了，若要弹幕是能响应单击事件，需要添加如下处理：
 
-在xml不居中添加DanMuParentView
+在xml中添加DanMuParentView
 ```
  <com.anbetter.danmuku.DanMuParentView
         android:id="@+id/dpv_broadcast"
@@ -104,11 +110,5 @@ OK了，就这么简单，一条弹幕就发送成功了
         });
 ```
 
-
-## 示例效果如下：
-<img src="https://github.com/hpdx/DanmukuLight/blob/master/result_image.jpg" width="320px" />
-
-[下载示例Apk](https://github.com/hpdx/DanmukuLight/blob/master/danmuku.apk)
-
-在使用过程中有遇到bug，欢迎提issuse ! 若你觉得还不错，请点Star, 谢谢！
+## 在使用过程中有遇到bug，欢迎提issuse ! 若你觉得还不错，请点Star, 谢谢！
 
