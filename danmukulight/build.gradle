@@ -60,7 +60,7 @@ install {
         pom.project {
             name 'danmukulight'
             description '基于Fresco的大图浏览库'
-            url 'https://github.com/hpdx/MLog'
+            url 'https://github.com/hpdx/DanmukuLight'
             inceptionYear '2016'
 
             packaging 'aar'
@@ -77,9 +77,9 @@ install {
             }
 
             scm {
-                connection 'https://github.com/hpdx/MLog.git' // Git仓库地址。
-                developerConnection 'https://github.com/hpdx/MLog.git' // Git仓库地址。
-                url 'https://github.com/hpdx/MLog' // 项目主页。
+                connection 'https://github.com/hpdx/DanmukuLight.git' // Git仓库地址。
+                developerConnection 'https://github.com/hpdx/DanmukuLight.git' // Git仓库地址。
+                url 'https://github.com/hpdx/DanmukuLight' // 项目主页。
             }
 
             developers {
@@ -106,8 +106,8 @@ bintray {
         name = 'danmukulight'
         userOrg = user
         licenses = ['Apache-2.0']
-        websiteUrl = 'https://github.com/hpdx/MLog'
-        vcsUrl = 'https://github.com/hpdx/MLog.git'
+        websiteUrl = 'https://github.com/hpdx/DanmukuLight'
+        vcsUrl = 'https://github.com/hpdx/DanmukuLight.git'
         publish = true
         publicDownloadNumbers = true
     }
