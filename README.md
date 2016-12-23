@@ -1,5 +1,5 @@
 # DanmukuLight
-Android上专为视屏直播打造的轻量级弹幕库（100多kb）
+Android上专为视频直播打造的轻量级弹幕库（100多kb）
 
 ## demo运行后的效果如下：
 <img src="https://github.com/hpdx/DanmukuLight/blob/master/result_image.jpg" width="320px" />
