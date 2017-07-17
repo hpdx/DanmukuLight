@@ -2,7 +2,6 @@ package com.anbetter.danmuku.model.channel;
 
 import android.content.Context;
 import android.graphics.Canvas;
-import android.util.Log;
 
 import com.anbetter.danmuku.control.dispatcher.IDanMuDispatcher;
 import com.anbetter.danmuku.control.speed.SpeedController;
@@ -60,7 +59,6 @@ public class DanMuPoolManager implements IDanMuPoolManager {
             isStart = true;
             danMuConsumer.start();
             danMuProducer.start();
-            Log.i("danmu", "-----startEngine()------");
         }
     }
 

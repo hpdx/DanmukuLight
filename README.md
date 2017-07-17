@@ -17,17 +17,18 @@ Android上专为视频直播打造的轻量级弹幕库（100多kb）
 
 在Module中的build.gradle文件里，添加以下依赖：
 ```
- allprojects {
+allprojects {
     repositories {
         jcenter()
+        mavenCentral() // 切记要添加这个
 
         maven {
             url 'https://dl.bintray.com/hpdx/maven/'
         }
     }
- }
+}
 
- compile 'com.anbetter:danmukulight:1.0.0'
+compile 'com.anbetter:danmukulight:1.0.1'
 ```
 
 在xml中添加
@@ -80,6 +81,10 @@ mDanMuContainerBroadcast.add(danMuView);
 ```
 OK了，就这么简单，一条弹幕就发送成功了
 
+隐藏或者显示弹幕
+```
+mDanMuContainerBroadcast.hideAllDanMuView(hide); // boolean
+```
 
 ## 对了，若要弹幕是能响应单击事件，需要添加如下处理：
 

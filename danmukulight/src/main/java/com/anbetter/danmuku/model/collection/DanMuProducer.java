@@ -90,7 +90,12 @@ public class DanMuProducer {
         }
 
         public void release() {
-            danMuProducer = null;
+            if (danMuProducer != null) {
+                if(danMuProducer.danMuProducedPool != null) {
+                    danMuProducer.danMuProducedPool.clear();
+                }
+                danMuProducer = null;
+            }
         }
 
     }

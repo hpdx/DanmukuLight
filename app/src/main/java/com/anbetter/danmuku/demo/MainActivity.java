@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.anbetter.danmuku.DanMuView;
 import com.anbetter.danmuku.demo.model.DanmakuEntity;
@@ -17,6 +18,9 @@ public class MainActivity extends AppCompatActivity {
     private DanMuView mDanMuContainerRoom;
     private DanMuView mDanMuContainerBroadcast;
     private DanMuHelper mDanMuHelper;
+    private boolean isHide;
+
+    private Button mButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,8 +80,18 @@ public class MainActivity extends AppCompatActivity {
                 addDanmaku(danmakuEntity);
             }
         });
-    }
 
+        mButton = (Button) findViewById(R.id.button3);
+        mButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                isHide = !isHide;
+                mButton.setText(isHide?"显示弹幕":"隐藏弹幕");
+                hideAllDanMuView(isHide);
+            }
+        });
+
+    }
 
     /**
      * 发送一条全站弹幕
@@ -94,6 +108,20 @@ public class MainActivity extends AppCompatActivity {
     private void addRoomDanmaku(DanmakuEntity danmakuEntity) {
         if (mDanMuHelper != null) {
             mDanMuHelper.addDanMu(danmakuEntity, false);
+        }
+    }
+
+    /**
+     * 显示或者隐藏弹幕
+     * @param hide
+     */
+    private void hideAllDanMuView(boolean hide) {
+        if(mDanMuContainerBroadcast != null) {
+            mDanMuContainerBroadcast.hideAllDanMuView(hide);
+        }
+
+        if(mDanMuContainerRoom != null) {
+            mDanMuContainerRoom.hideAllDanMuView(hide);
         }
     }
 

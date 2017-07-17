@@ -20,8 +20,10 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile project(':danmukulight')
-    compile 'com.facebook.fresco.helper:fresco-helper:1.1.8'
+//    compile project(':danmukulight')
+    compile 'com.anbetter:danmukulight:1.0.1'
+
+    compile 'com.facebook.fresco.helper:fresco-helper:1.6.0'
     compile 'com.google.code.gson:gson:2.7'
     compile 'com.android.support:appcompat-v7:25.0.1'
 }

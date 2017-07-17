@@ -193,8 +193,6 @@ public class DanMuModel implements OnDanMuViewTouchListener {
     }
 
     public void setAlive(boolean isAlive) {
-//        Log.i("danmu", "-----------isAlive = "+ isAlive +"---------------");
-
         if(!isAlive) {
             release();
         }
@@ -259,8 +257,6 @@ public class DanMuModel implements OnDanMuViewTouchListener {
     }
 
     public void release() {
-//        Log.i("danmu", "---------release()-------------");
-
         this.avatar = null;
         this.levelBitmap = null;
         this.textBackground = null;

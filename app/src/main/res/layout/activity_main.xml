@@ -53,7 +53,16 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_marginBottom="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginRight="15dp"
         android:text="显示系统消息弹幕"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_above="@id/button"
+        android:text="隐藏弹幕"/>
 
 </RelativeLayout>

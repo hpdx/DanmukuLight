@@ -44,7 +44,6 @@ public class DanMuView extends View implements IDanMuParent {
         this.onDanMuViewTouchListeners.addAll(onDanMuTouchCallBackListeners);
     }
 
-
     public DanMuView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         init(context);
