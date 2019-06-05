@@ -63,6 +63,6 @@
         android:layout_marginBottom="10dp"
         android:layout_marginLeft="15dp"
         android:layout_above="@id/button"
-        android:text="隐藏弹幕（显示或隐藏开关）"/>
+        android:text="隐藏弹幕"/>
 
 </RelativeLayout>
