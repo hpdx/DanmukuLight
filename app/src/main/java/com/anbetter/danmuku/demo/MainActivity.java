@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         layoutParams.width = DensityUtil.getDisplayWidth(this);
         layoutParams.height = DensityUtil.getDisplayHeight(this);
 
-        String url = "http://ww2.sinaimg.cn/large/610dc034jw1fa42ktmjh4j20u011hn8g.jpg";
+        String url = "https://ww2.sinaimg.cn/large/610dc034jw1fa42ktmjh4j20u011hn8g.jpg";
         Phoenix.with(simpleDraweeView)
                 .setWidth(DensityUtil.getDisplayWidth(this))
                 .setHeight(DensityUtil.getDisplayHeight(this))
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                 DanmakuEntity danmakuEntity = new DanmakuEntity();
                 danmakuEntity.setType(DanmakuEntity.DANMAKU_TYPE_USERCHAT);
                 danmakuEntity.setName("小A");
-                danmakuEntity.setAvatar("http://q.qlogo.cn/qqapp/100229475/E573B01150734A02F25D8E9C76AFD138/100");
+                danmakuEntity.setAvatar("https://q.qlogo.cn/qqapp/100229475/E573B01150734A02F25D8E9C76AFD138/100");
                 danmakuEntity.setLevel(23);
                 danmakuEntity.setText("滚滚长江东逝水，浪花淘尽英雄~~");
 
