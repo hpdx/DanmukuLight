@@ -1,11 +1,11 @@
 package com.anbetter.danmuku.demo;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import androidx.appcompat.app.AppCompatActivity;
 import com.anbetter.danmuku.DanMuView;
 import com.anbetter.danmuku.demo.model.DanmakuEntity;
 import com.facebook.drawee.view.SimpleDraweeView;

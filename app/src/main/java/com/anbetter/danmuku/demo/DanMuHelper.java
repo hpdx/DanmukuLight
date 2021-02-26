@@ -7,10 +7,11 @@ import android.graphics.PixelFormat;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.NinePatchDrawable;
-import android.support.v4.content.ContextCompat;
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.ForegroundColorSpan;
+
+import androidx.core.content.ContextCompat;
 
 import com.anbetter.danmuku.demo.model.DanmakuEntity;
 import com.anbetter.danmuku.demo.model.RichTextParse;
@@ -18,10 +19,10 @@ import com.anbetter.danmuku.model.DanMuModel;
 import com.anbetter.danmuku.model.utils.DimensionUtil;
 import com.anbetter.danmuku.view.IDanMuParent;
 import com.anbetter.danmuku.view.OnDanMuTouchCallBackListener;
-import com.anbetter.log.MLog;
 import com.facebook.fresco.helper.Phoenix;
 import com.facebook.fresco.helper.listener.IResult;
 import com.facebook.fresco.helper.utils.CircleBitmapTransform;
+import com.facebook.fresco.helper.utils.MLog;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;

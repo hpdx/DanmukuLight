@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
-    buildToolsVersion "28.0.3"
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
 
     defaultConfig {
         applicationId "com.anbetter.danmuku.demo"
-        minSdkVersion 19
-        targetSdkVersion 28
+        minSdkVersion 23
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
     }
@@ -24,26 +24,13 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
-    configurations.all {
-        resolutionStrategy.eachDependency { DependencyResolveDetails details ->
-            def requested = details.requested
-            if (requested.group == 'com.android.support') {
-                if (!requested.name.startsWith("multidex")
-                        && !requested.name.startsWith("constraint")) {
-                    details.useVersion "28.0.0"
-                }
-            }
-        }
-    }
-
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(':danmukulight')
-//    compile 'com.anbetter:danmukulight:1.0.1'
 
-    implementation 'com.facebook.fresco.helper:fresco-helper:2.1.8'
-    implementation 'com.google.code.gson:gson:2.8.5'
-    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.facebook.fresco.helper:fresco-helper:2.4.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
 }
